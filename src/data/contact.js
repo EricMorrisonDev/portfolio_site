@@ -15,7 +15,7 @@ export const contactData = [
     {
         title: "Github",
         imgPath: `${BASE_URL}img/contact icons/noun-github-4289652-67E8F9.png`,
-        value: "https://github.com/interestedinbread"
+        value: "https://github.com/EricMorrisonDev"
     },
     
 
