@@ -14,7 +14,7 @@ export function ContactInfo() {
                         <div>
                             <p className="source-code-pro-regular text-sm md:text-base text-gray-300">{item.title}</p>
                             <p className="source-code-pro-regular text-sm md:text-base text-gray-300">
-                                <a href="https://github.com/interestedinbread">{item.value}</a>
+                                <a href="https://github.com/ericmorrisondev">{item.value}</a>
                                 </p>
                         </div>
                     </div>
