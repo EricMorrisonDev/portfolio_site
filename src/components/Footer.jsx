@@ -6,7 +6,7 @@ const scrollToTop = () => {
 }
 
     return(
-        <footer className="bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 mt-24 py-12 md:py-24 border-t border-cyan-400/20">
+        <footer className="bg-gradient-to-br from-black via-zinc-900 to-neutral-800 mt-24 py-12 md:py-24 border-t border-cyan-400/20">
             <div className="flex w-9/10 mx-auto justify-between">
                 <div className="w-2/3 md:w-full">
                     <h3 className="text-cyan-400 font-bold text-base md:text-xl mb-4 nunito-sans-bold">

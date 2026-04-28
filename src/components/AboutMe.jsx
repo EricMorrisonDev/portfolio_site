@@ -3,7 +3,7 @@ export function AboutMe() {
     return(
         <>
             <h2 className="nunito-sans-bold text-4xl md:text-5xl my-18 md:my-24 text-cyan-300 text-center">About Me</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-18 w-9/10 md:w-4/5 mx-auto bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 p-4 md:p-12 rounded-[2rem]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-18 w-9/10 md:w-4/5 mx-auto bg-gradient-to-br from-black via-zinc-900 to-neutral-800 p-4 md:p-12 rounded-[2rem]">
                 <div className="md:col-span-1">
                     <img src={`${import.meta.env.BASE_URL}img/Eric_Morrison_pic_1_cropped.jpeg`}
                     className="rounded-lg md:max-h-[500px] shadow-md"/>
