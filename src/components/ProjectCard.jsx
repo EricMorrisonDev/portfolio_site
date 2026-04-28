@@ -78,7 +78,7 @@ export function ProjectCard(props) {
                             <SwiperSlide key={index}
                             className="mx-auto">
                                 <img src={img} 
-                                className={project.app ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : isSmallDisplay ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] border-2"}/>
+                                className={project.app ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300 object-cover" : isSmallDisplay ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] w-full object-cover border-2"}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -113,7 +113,7 @@ export function ProjectCard(props) {
                             <SwiperSlide key={index}
                             className="mx-auto">
                                 <img src={img} 
-                                className={project.app ? "rounded-lg h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] border-2"}/>
+                                className={project.app ? "rounded-lg h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] w-full object-cover border-2"}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>

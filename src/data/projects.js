@@ -18,7 +18,7 @@ export const projects = [
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_Boi_mobile_screenshot_4.jpeg`,
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_Boi_mobile_screenshot_5.jpeg`
         ],
-        stack: ["html", "js", "tailwind", "node", "react"],
+        stack: ["html", "js", "tailwind", "node", "react", "typescript"],
         link: "https://policyboi.vercel.app/",
         app: false
         
@@ -51,6 +51,21 @@ export const projects = [
         ],
         stack:["html", "js", "tailwind"],
         link: "https://hummingbirdpub.com",
+        app: false
+    },
+    {
+        title: "Classroom CEO",
+        description: "A custom website promoting the release of the new book Classroom CEO from Fangzhou Jiang, co-founder of the edtech company Crimson Education.",
+        imgs: [ 
+            `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screenshot_1.png`, 
+            `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screenshot_2.png`,
+            `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screeenshot_3.png`],
+        mobileImgs: [`${BASE_URL}img/Fangzhou_site_mobile_screenshots/FZ_site_mobile_screenshot_1.jpg`,
+            `${BASE_URL}img/Fangzhou_site_mobile_screenshots/FZ_site_mobile_screenshot_2.jpg`,
+            `${BASE_URL}img/Fangzhou_site_mobile_screenshots/FZ_site_mobile_screenshot_3.jpg`,
+        ],
+        stack:[],
+        link: "https://www.fangzhoujiang.com/",
         app: false
     },
     {
