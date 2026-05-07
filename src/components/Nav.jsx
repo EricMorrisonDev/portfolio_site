@@ -1,9 +1,14 @@
 import { useEffect, useState, useRef} from "react";
+import { scrollToSection } from "../lib/utils";
 
-export function Nav() {
+export function Nav({
+    navHeight,
+    setNavHeight
+}
+) {
 
     const [scrolled, setScrolled] = useState(false);
-    const [navHeight, setNavHeight] = useState(0)
+    
 
     const navRef = useRef(null)
 
@@ -29,20 +34,7 @@ export function Nav() {
         }
     },[])
 
-    const scrollToSection = (sectionId) => {
-        const element = document.getElementById(sectionId);
-        if(element) {
-            const elementPosition = element.getBoundingClientRect().top;
-            const offsetPosition = elementPosition + window.pageYOffset - navHeight;
-
-            window.scrollTo({
-                top: offsetPosition - 20,
-                behavior: 'smooth'
-            });
-        }
-
-        
-    };
+    
 
     return(
         <>
@@ -56,32 +48,32 @@ export function Nav() {
                 <ul className="flex gap-6 md:gap-4">
                     <li>
                         <button 
-                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular  text-sm md:text-xl"
-                            onClick={() => scrollToSection('about')}
+                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular  text-sm md:text-base"
+                            onClick={() => scrollToSection('about', navHeight)}
                         >
                             About Me
                         </button>
                     </li>
                     <li>
                         <button 
-                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-xl"
-                            onClick={() => scrollToSection('projects')}
+                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-base"
+                            onClick={() => scrollToSection('projects', navHeight)}
                         >
                             Projects
                         </button>
                     </li>
                     <li>
                         <button 
-                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-xl"
-                            onClick={() => scrollToSection('skills')}
+                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-base"
+                            onClick={() => scrollToSection('skills', navHeight)}
                         >
                             Skills
                         </button>
                     </li>
                     <li>
                         <button 
-                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-xl"
-                            onClick={() => scrollToSection('contact')}
+                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-base"
+                            onClick={() => scrollToSection('contact', navHeight)}
                         >
                             Contact
                         </button>

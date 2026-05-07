@@ -7,15 +7,23 @@ import { Testimonials } from "./components/Testimonials"
 import { ContactInfo } from "./components/ContactInfo"
 import { AboutMe } from "./components/AboutMe"
 import { Footer } from "./components/Footer"
+import { useState } from "react"
 
 function App() {
+
+  const [navHeight, setNavHeight] = useState(0)
   
   return (
     <>
-      <Nav/>
+      <Nav
+        navHeight={navHeight}
+        setNavHeight={setNavHeight}
+        />
       <div className="mt-24 md:mt-38">
         <Header />
-        <ButtonBar />
+        <ButtonBar 
+          navHeight={navHeight}
+        />
         <div id="projects">
           <ProjectList />
         </div>
