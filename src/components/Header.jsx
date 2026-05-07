@@ -27,11 +27,12 @@ export function Header() {
                     </h3>
                 </div>
                 <div className="md:col-start-3 md:col-span-1 md:row-start-1 md:row-span-3">
-                    <img src={`${import.meta.env.BASE_URL}img/Eric_headshot_portrait.png`} className="rounded-lg shadow-md md:h-[460px] w-full object-cover"></img>
+                    <img src={`${import.meta.env.BASE_URL}img/Eric_headshot_portrait.png`} className="rounded-lg shadow-md md:h-[557px] w-full object-cover"></img>
                 </div>
                 <div className="md:col-span-2 mt-4 md-mt-0">
-                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’m a self-taught developer who builds responsive, data-driven web apps using React, Tailwind, Node, Express, and PostgreSQL.</h4>
-                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’ve deployed several full stack projects and worked directly with clients in my community. This has taught me not only how to code, but to communicate clearly, establish expectations, and deliver usable results.</h4>
+                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I’m a full stack web developer who builds responsive, modern, professional websites at reasonable rates. I take pride in being a great communicator who excels at translating clients' ideas into technical results.</h4>
+                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">If you need a website, or would like to make changes to an existing website, I'm all over it. Take a look at some of my work to see what I can do for you. </h4>
+                    <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mb-4 md:w-9/10 text-gray-300">I'm also an avid software engineer who builds data-driven web apps using Next.js, React, Typescript,  Node, Express, and PostgreSQL. Feel free to check out my applications; I had a blast making them.</h4>
                     <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-xl mt-4 md:mt-8 md:w-9/10 text-gray-300">I am constantly learning and absolutely LOVE a challenge. Let's build something!</h4>
                 </div>
                 <div className="grid grid-rows-2 grid-cols-4 md:flex gap-2 md:gap-6 md:col-span-2 gap-y-12 my-8 ml-4 max-h-[100px]">

@@ -116,6 +116,8 @@ export const techLogos = {
     css: `${BASE_URL}img/logos/CSS3_logo.svg.png`,
     react: `${BASE_URL}img/logos/react-1-logo-png-transparent.png`,
     typescript: `${BASE_URL}img/logos/Typescript.logo.png`,
-    node: `${BASE_URL}img/logos/nodejs_logo.png`
+    node: `${BASE_URL}img/logos/nodejs_logo.png`,
+    next: `${BASE_URL}img/logos/nextjs-icon-dark-background.png`,
+    postgres: `${BASE_URL}img/logos/Logo_PostgreSQL.png`
 }
     
