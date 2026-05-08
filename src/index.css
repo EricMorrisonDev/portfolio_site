@@ -14,10 +14,10 @@ html::before {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110vh;
-  height: 110dvh;
-  min-height: 110vh;
-  min-height: 110dvh;
+  height: 130vh;
+  height: 130dvh;
+  min-height: 130vh;
+  min-height: 130dvh;
   background-image: url('/img/asfalt--light--1920x1080.png');
   background-size: 100% auto;
   background-position: center top;
