@@ -84,7 +84,7 @@ export const websites = [
     },
     {
         title: "Classroom CEO",
-        description: "This is a custom website promoting the release of the new book Classroom CEO from Fangzhou Jiang, co-founder of the edtech company Crimson Education. My goal was to make this site efficient and concise, fitting all of its content into one page without feeling overcrowded. I was pleased with the results and the client was too.",
+        description: "This is a custom website promoting the release of the new book Classroom CEO from Fangzhou Jiang, co-founder of the edtech company Crimson Education. My goal was to make this site efficient and concise, fitting all of its content into one page without feeling overcrowded. The client and I were both pleased with the results.",
         imgs: [ 
             `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screenshot_1.png`, 
             `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screenshot_2.png`,
