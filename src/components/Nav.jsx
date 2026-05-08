@@ -56,10 +56,18 @@ export function Nav({
                     </li>
                     <li>
                         <button 
-                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-base"
-                            onClick={() => scrollToSection('projects', navHeight)}
+                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular  text-sm md:text-base"
+                            onClick={() => scrollToSection('websites', navHeight)}
                         >
-                            Projects
+                            Websites
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            className="md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors source-code-pro-regular text-sm md:text-base"
+                            onClick={() => scrollToSection('apps', navHeight)}
+                        >
+                            Apps
                         </button>
                     </li>
                     <li>
