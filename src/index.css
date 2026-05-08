@@ -1,28 +1,45 @@
 
 @import "tailwindcss";
 
-html, body {
+/* Match page chrome so Safari never flashes default white (overscroll / viewport slack). */
+html {
   min-height: 100vh;
   min-height: 100dvh;
+  min-height: -webkit-fill-available;
   height: 100%;
+  background-color: #18181b;
   overscroll-behavior: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
+  height: 100%;
+  margin: 0;
+  background-color: #18181b;
+  overscroll-behavior: none;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: -webkit-fill-available;
 }
 
 html::before {
   content: '';
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  height: 100dvh;
+  inset: 0;
+  z-index: -1;
+  /* Large viewport height covers iOS when dynamic vh is shorter than the “resting” chrome layout. */
   min-height: 100vh;
   min-height: 100dvh;
+  min-height: 100lvh;
   background-image: url('/img/asfalt--light--1920x1080.png');
   background-size: 100% auto;
   background-position: center top;
   background-repeat: repeat-y;
-  z-index: -1;
 }
 
 .nunito-sans-regular {
