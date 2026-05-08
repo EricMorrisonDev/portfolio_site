@@ -21,14 +21,16 @@ function App() {
         setNavHeight={setNavHeight}
         />
       <div className="mt-24 md:mt-38">
-        <Header />
+        <Header 
+          navHeight={navHeight}
+        />
         <ButtonBar 
           navHeight={navHeight}
         />
         <div id="websites">
           <WebsiteList />
         </div>
-        <div id="projects">
+        <div id="apps">
           <ProjectList />
         </div>
         <Testimonials />
