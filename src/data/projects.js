@@ -80,6 +80,26 @@ export const websites = [
         app: false
     },
     {
+        title: "Galiano Island Contracting",
+        description: "This client had an existing site that was in need of an update. I overhauled the styles, removed uneeded page components, and totally reorganized the spatial layout of the content. This allowed the site become much more readable.",
+        imgs: [ 
+            `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_1.png`, 
+            `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_2.png`,
+            `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_3.png`,
+            `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_4.png`,
+            `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_5.png`,
+        ],
+        mobileImgs: [
+            `${BASE_URL}img/GIC_Mobile_screenshots/GIC_mobile_1.PNG`,
+            `${BASE_URL}img/GIC_Mobile_screenshots/GIC_mobile_2.PNG`,
+            `${BASE_URL}img/GIC_Mobile_screenshots/GIC_mobile_3.PNG`,
+            `${BASE_URL}img/GIC_Mobile_screenshots/GIC_mobile_4.PNG`,
+            `${BASE_URL}img/GIC_Mobile_screenshots/GIC_mobile_5.PNG`,
+        ],
+        link: "https://www.galianoislandcontracting.ca/",
+        app: false
+    },
+    {
         title: "Max & Moritz",
         description: "Website for a food truck near the ferry terminal on Galiano Island, BC. Built with HTML, JavaScript, and Tailwind CSS, using a minimal design and image assets sourced from the client's Facebook page and my own photography.",
         imgs: [`${BASE_URL}img/Max_and_Moritz_Screenshots/Max_and_Moritz_screenshot_1.jpg`, 
