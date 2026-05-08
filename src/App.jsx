@@ -8,6 +8,7 @@ import { ContactInfo } from "./components/ContactInfo"
 import { AboutMe } from "./components/AboutMe"
 import { Footer } from "./components/Footer"
 import { useState } from "react"
+import { WebsiteList } from "./components/WebsiteList"
 
 function App() {
 
@@ -24,6 +25,9 @@ function App() {
         <ButtonBar 
           navHeight={navHeight}
         />
+        <div id="websites">
+          <WebsiteList />
+        </div>
         <div id="projects">
           <ProjectList />
         </div>

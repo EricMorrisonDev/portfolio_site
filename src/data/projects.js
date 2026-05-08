@@ -37,6 +37,19 @@ export const projects = [
         app: true
         
     },
+    
+    {
+        title: "Do Date",
+        description: "A reminder app using aws services such as Cognito, Dynamo, EventBridge, and Lambda. SMS messaging is handled by Twilio. This project allowed me to flex my full stack development skills while also learning Typescript on the fly.",
+        imgs: [`${BASE_URL}img/do_date_screenshots/do_date_screenshot_1.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_2.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_3.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_4.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_5.jpeg`],
+        stack: ["html", "js", "typescript", "tailwind", "node", "react"],
+        link: "https://do-date.vercel.app/",
+        app: true
+    },
+    
+]
+
+export const websites = [
     {
         title: "The Hummingbird Pub",
         description: "Website for a local business built with Tailwind CSS. Integrated a custom Google Apps Script that syncs the site with a Google Sheet, allowing the client to update menu prices and business hours without touching the code.",
@@ -49,7 +62,6 @@ export const projects = [
             `${BASE_URL}img/Hummingbird_Screenshots/hummingbird_mobile_screenshots/hummingbird_mobile_screenshot_4.jpeg`,
             `${BASE_URL}img/Hummingbird_Screenshots/hummingbird_mobile_screenshots/hummingbird_mobile_screensot_5.jpeg`,
         ],
-        stack:["html", "js", "tailwind"],
         link: "https://hummingbirdpub.com",
         app: false
     },
@@ -64,17 +76,8 @@ export const projects = [
             `${BASE_URL}img/Fangzhou_site_mobile_screenshots/FZ_site_mobile_screenshot_2.jpg`,
             `${BASE_URL}img/Fangzhou_site_mobile_screenshots/FZ_site_mobile_screenshot_3.jpg`,
         ],
-        stack:[],
         link: "https://www.fangzhoujiang.com/",
         app: false
-    },
-    {
-        title: "Do Date",
-        description: "A reminder app using aws services such as Cognito, Dynamo, EventBridge, and Lambda. SMS messaging is handled by Twilio. This project allowed me to flex my full stack development skills while also learning Typescript on the fly.",
-        imgs: [`${BASE_URL}img/do_date_screenshots/do_date_screenshot_1.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_2.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_3.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_4.jpeg`, `${BASE_URL}img/do_date_screenshots/do_date_screenshot_5.jpeg`],
-        stack: ["html", "js", "typescript", "tailwind", "node", "react"],
-        link: "https://do-date.vercel.app/",
-        app: true
     },
     {
         title: "Max & Moritz",
@@ -88,7 +91,6 @@ export const projects = [
             `${BASE_URL}img/Max_and_Moritz_Screenshots/Max_and_Mo_mobile_screenshots/M_and_M_mobile_screenshot_4.jpeg`,
             `${BASE_URL}img/Max_and_Moritz_Screenshots/Max_and_Mo_mobile_screenshots/M_and_M_mobile_screenshot_5.jpeg`,
         ],
-        stack:["html", "js", "tailwind"],
         link: "https://maxandmoritz.netlify.app",
         app: false
     },
@@ -103,11 +105,12 @@ export const projects = [
             `${BASE_URL}img/Ixchel_Screenshots/Ixchel_Mobile_screenshots/Ixchel_mobile_screenshot_3.jpeg`,
             `${BASE_URL}img/Ixchel_Screenshots/Ixchel_Mobile_screenshots/Ixchel_mobile_screenshot_4.jpeg`,
         ],
-        stack: ["html", "js", "css"],
         link: "https://ixchel-galiano.netlify.app",
         app: false
-    },
+    }
+
 ]
+
 
 export const techLogos = {
     html: `${BASE_URL}img/logos/html_5_logo.png`,
