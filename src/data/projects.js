@@ -18,7 +18,24 @@ export const projects = [
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_Boi_mobile_screenshot_4.jpeg`,
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_Boi_mobile_screenshot_5.jpeg`
         ],
-        stack: ["html", "js", "tailwind", "node", "react", "typescript"],
+        stack: ["tailwind", "node", "react", "typescript", "postgres"],
+        link: "https://policyboi.vercel.app/",
+        app: false
+        
+    },
+    {
+        title: "Evernote Replacement",
+        description: "After being an Evernote user for years I was dismayed to see that they had dramatically increased their prices. I set out to build my own Evernote and save myself a lot of money. This project hugely improved my full stack capabilities, allowing me to better understand API contracts, Typescript conventions, and Next.js principles.",
+        imgs: [
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_1.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_2.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_3.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_4.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_5.png`, 
+            ],
+        mobileImgs: [ 
+        ],
+        stack: ["next", "tailwind", "node", "react", "typescript", "postgres"],
         link: "https://policyboi.vercel.app/",
         app: false
         
@@ -52,7 +69,7 @@ export const projects = [
 export const websites = [
     {
         title: "The Hummingbird Pub",
-        description: "Website for a local business built with Tailwind CSS. Integrated a custom Google Apps Script that syncs the site with a Google Sheet, allowing the client to update menu prices and business hours without touching the code.",
+        description: "I completely rebuilt the site from the ground up, making key business information easy to read and navigate while also emphasizing the visual appeal of the location. In order to allow the client to update their own menu prices and business hours without touching any code, I integrated a Google script that loads data from Google sheet, which the owner can update at any time.",
         imgs: [`${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot.jpg`, 
             `${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_2_small.jpg`, 
             `${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_3_small.jpg`],
@@ -67,7 +84,7 @@ export const websites = [
     },
     {
         title: "Classroom CEO",
-        description: "A custom website promoting the release of the new book Classroom CEO from Fangzhou Jiang, co-founder of the edtech company Crimson Education.",
+        description: "This is a custom website promoting the release of the new book Classroom CEO from Fangzhou Jiang, co-founder of the edtech company Crimson Education. My goal was to make this site efficient and concise, fitting all of its content into one page without feeling overcrowded. I was pleased with the results and the client was too.",
         imgs: [ 
             `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screenshot_1.png`, 
             `${BASE_URL}img/Fangzhou_site_screenshots/FZ_site_screenshot_2.png`,
@@ -81,7 +98,7 @@ export const websites = [
     },
     {
         title: "Galiano Island Contracting",
-        description: "This client had an existing site that was in need of an update. I overhauled the styles, removed uneeded page components, and totally reorganized the spatial layout of the content. This allowed the site become much more readable.",
+        description: "The client had an existing site that was in need of an update. I overhauled the styles, removed uneeded page components, and totally reorganized the spatial layout of the content, eliminating bloat and visual chaos. The result was a bold, clear, professional style.",
         imgs: [ 
             `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_1.png`, 
             `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_2.png`,
@@ -101,7 +118,7 @@ export const websites = [
     },
     {
         title: "Max & Moritz",
-        description: "Website for a food truck near the ferry terminal on Galiano Island, BC. Built with HTML, JavaScript, and Tailwind CSS, using a minimal design and image assets sourced from the client's Facebook page and my own photography.",
+        description: "Being fully occupied with the day to day operations of the business, the owner did not have time to take pictures for the site. So I went there myself, took a few pictures on my phone, and sourced the best images from all of their social media posts. I took special care to match the subtle vibe and aesthetic of their menu as well.",
         imgs: [`${BASE_URL}img/Max_and_Moritz_Screenshots/Max_and_Moritz_screenshot_1.jpg`, 
             `${BASE_URL}img/Max_and_Moritz_Screenshots/Max_and_moritz_screenshot_2.jpg`, 
             `${BASE_URL}img/Max_and_Moritz_Screenshots/Max_and_moritz_screenshot_3.jpg`],
@@ -116,7 +133,7 @@ export const websites = [
     },
     {
         title: "Ixchel",
-        description: "A static website for a local artisan shop. Built entirely with images sourced from the client's Facebook page so they could have a professional online presence with no extra setup. This was my first live project for a real client.",
+        description: "This website was also created entirely from media sourced from the client's social platforms. I wanted this site to make use of Ixchel's greatest strengths; the visual appeal of its storefront, decor, and product selection. I felt that the results captured the exuberant energy of Ixchel well.",
         imgs: [`${BASE_URL}img/Ixchel_Screenshots/Ixchel_screenshot_1.jpg`, 
             `${BASE_URL}img/Ixchel_Screenshots/ixchel_screenshot_2.jpg`, 
             `${BASE_URL}img/Ixchel_Screenshots/ixchel_screenshot_3.jpg`],
