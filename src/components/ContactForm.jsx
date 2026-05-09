@@ -63,7 +63,7 @@ export function ContactForm() {
             </h3>
             <form
                 onSubmit={handleSubmit}
-                className="w-1/2 mx-auto mt-8 p-6 md:p-8 rounded-xl bg-zinc-900 border border-zinc-700/70 shadow-md"
+                className="w-1/2 md:w-9/10 mx-auto mt-8 p-6 md:p-8 rounded-xl bg-zinc-900 border border-zinc-700/70 shadow-md"
                 noValidate
                 >
                 

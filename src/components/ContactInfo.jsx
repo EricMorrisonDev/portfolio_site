@@ -6,7 +6,7 @@ export function ContactInfo() {
     return(
         <>
             <h2 className="nunito-sans-bold text-4xl md:text-5xl my-24 text-cyan-300 text-center">Let's Connect</h2>
-            <div className="flex flex-col md:flex-row justify-center gap-24 w-4/5 mx-auto">
+            <div className="flex flex-col md:flex-row justify-center gap-24 md:gap-12 w-4/5 mx-auto">
                 {contactData.map((item, index) => (
                     <div key={index}
                     className="flex gap-4">
