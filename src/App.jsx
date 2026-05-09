@@ -33,7 +33,7 @@ function App() {
         <div id="apps">
           <ProjectList />
         </div>
-        <Testimonials />
+        
         <div id="skills">
           <Skills />
         </div>

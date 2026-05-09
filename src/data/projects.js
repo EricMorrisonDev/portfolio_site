@@ -36,7 +36,7 @@ export const projects = [
         mobileImgs: [ 
         ],
         stack: ["next", "tailwind", "node", "react", "typescript", "postgres"],
-        link: "https://policyboi.vercel.app/",
+        link: "https://github.com/EricMorrisonDev/nevernote",
         app: false
         
     },

@@ -17,7 +17,6 @@ export function Header(props) {
                         <ReactTyped
                             strings={[
                                 "Full Stack Web Developer",
-                                "Self-Taught Problem Solver",
                                 "Building Modern Web Apps"
                             ]}
                             typeSpeed={50}
@@ -47,10 +46,10 @@ export function Header(props) {
                       I had a blast making them.</h4>
                     <h4 className="nunito-sans-regular md:source-code-pro-italic text-base md:text-lg mt-4 md:mt-8 md:w-9/10 text-gray-300">I am constantly learning and absolutely LOVE a challenge. Let's build something!</h4>
                 </div>
-                <div className="grid grid-rows-2 grid-cols-4 md:flex gap-2 md:gap-6 md:col-span-2 gap-y-12 my-8 ml-4 max-h-[100px]">
+                <div className="flex gap-4 md:gap-6 md:col-span-2 gap-y-12 my-8 max-h-[100px]">
                     {Object.values(techLogos).map((path, index) => (
                             <img key={index} 
-                            className="h-[50px] w-[50px] rounded-lg" 
+                            className="h-[25px] w-[25px] md:h-[50px] md:w-[50px] rounded-lg" 
                             src={path}
                             alt="tech logo"
                             />
