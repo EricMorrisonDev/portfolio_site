@@ -34,6 +34,11 @@ export const projects = [
             `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_5.png`, 
             ],
         mobileImgs: [ 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_1.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_2.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_3.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_4.png`, 
+            `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_5.png`,
         ],
         stack: ["next", "tailwind", "node", "react", "typescript", "postgres"],
         link: "https://github.com/EricMorrisonDev/nevernote",
