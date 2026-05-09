@@ -69,7 +69,7 @@ export const projects = [
 export const websites = [
     {
         title: "The Hummingbird Pub",
-        description: "I completely rebuilt the site from the ground up, making key business information easy to read and navigate while also emphasizing the visual appeal of the location. In order to allow the client to update their own menu prices and business hours without touching any code, I integrated a Google script that loads data from Google sheet, which the owner can update at any time.",
+        description: "I completely rebuilt the site from the ground up, making key business information easy to read and navigate while also emphasizing the visual appeal of the location. In order to allow the client to update their own menu prices and business hours without touching any code, I integrated a feature that loads data from a Google sheet, which the owner can update at any time.",
         imgs: [`${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot.jpg`, 
             `${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_2_small.jpg`, 
             `${BASE_URL}img/Hummingbird_Screenshots/Hummingbird_pub_screenshot_3_small.jpg`],
@@ -98,7 +98,7 @@ export const websites = [
     },
     {
         title: "Galiano Island Contracting",
-        description: "The client had an existing site that was in need of an update. I overhauled the styles, removed uneeded page components, and totally reorganized the spatial layout of the content, eliminating bloat and visual chaos. The result was a bold, clear, professional style.",
+        description: "The client had an existing site that was in need of an update. I overhauled the styles, removed unneeded page components, and totally reorganized the spatial layout of the content in only a couple of days' work. The result was a bold, clear, professional style making the project look brand new.",
         imgs: [ 
             `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_1.png`, 
             `${BASE_URL}img/GIC_desktop_screenshots/GIC_desktop_2.png`,

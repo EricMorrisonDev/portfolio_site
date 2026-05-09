@@ -17,6 +17,7 @@
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-typed": "^2.0.12",
+    "resend": "^6.12.3",
     "swiper": "^12.0.2",
     "tailwindcss": "^4.1.13"
   },
