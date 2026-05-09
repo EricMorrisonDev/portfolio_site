@@ -1,4 +1,5 @@
 import { contactData } from "../data/contact"
+import { ContactForm } from "./ContactForm"
 
 export function ContactInfo() {
 
@@ -19,6 +20,9 @@ export function ContactInfo() {
                         </div>
                     </div>
                 ))}
+            </div>
+            <div className="w-full mx-auto pb-24">
+                <ContactForm />
             </div>
         </>
     )
