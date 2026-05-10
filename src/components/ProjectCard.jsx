@@ -53,16 +53,16 @@ export function ProjectCard(props) {
             viewport={{ once: true, amount: isSmallDisplay ? 0.1 : 0.2 }}
             >
                 <div className="md:col-span-1 md:p-8">
-                    <h3 className="text-cyan-400 nunito-sans-regular text-3xl">{project.title}</h3>
-                    <p className="text-gray-300 nunito-sans-regular text-base md:text-lg my-6">{project.description}</p>
+                    <h3 className="cabin-semibold text-3xl text-gray-300">{project.title}</h3>
+                    <p className="cabin-regular text-base md:text-lg my-6 text-gray-300 leading-relaxed">{project.description}</p>
                     {project.stack && (<ul className="grid grid-cols-4 md:flex gap-4 md:gap-8 mb-8">
                         {project.stack.map((item, index) => (
                             <li key={index}><img className="h-[50px] w-[50px] rounded-md" 
                             src={techLogos[item]}/></li>
                         ))}
                     </ul>)}
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        <p className="text-cyan-400">{project.link}</p>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block max-w-full">
+                        <p className="source-code-pro-regular text-sm md:text-base text-cyan-400 break-all hover:underline">{project.link}</p>
                     </a>
                 </div>
                 <div className="mt-8 md:mt-0 md:col-span-1 md:h-[400px]">
@@ -119,16 +119,16 @@ export function ProjectCard(props) {
                     </Swiper>
                 </div>
                 <div className="md:col-span-1 p-8">
-                    <h3 className="text-cyan-400 nunito-sans-regular text-3xl">{project.title}</h3>
-                    <p className="text-gray-300 nunito-sans-regular text-lg my-6">{project.description}</p>
+                    <h3 className="cabin-semibold text-3xl text-gray-300">{project.title}</h3>
+                    <p className="cabin-regular text-lg my-6 text-gray-300 leading-relaxed">{project.description}</p>
                     {project.stack && (<ul className="flex gap-4 mb-8">
                         {project.stack.map((item, index) => (
                             <li key={index}><img className="h-[50px] w-[50px] rounded-md" 
                             src={techLogos[item]}/></li>
                         ))}
                     </ul>)}
-                    <a href={project.link} target="_blank" rel="noopener noreferrer">
-                        <p className="text-cyan-400">{project.link}</p>
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block max-w-full">
+                        <p className="source-code-pro-regular text-sm md:text-base text-cyan-400 break-all hover:underline">{project.link}</p>
                     </a>
                 </div>
                 {project.videoLink && (

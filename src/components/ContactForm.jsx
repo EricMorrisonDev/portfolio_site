@@ -9,9 +9,9 @@ const initialFields = {
 }
 
 const inputClass =
-    'w-full rounded-lg bg-zinc-800 border border-zinc-500/90 px-3 py-2 text-gray-100 source-code-pro-regular text-sm md:text-base shadow-inner placeholder:text-zinc-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/25'
+    'w-full rounded-lg bg-zinc-800 border border-zinc-500/90 px-3 py-2 text-gray-100 cabin-regular text-sm md:text-base shadow-inner placeholder:text-zinc-500 focus:border-cyan-400 focus:outline-none focus:ring-2 focus:ring-cyan-400/25'
 
-const labelClass = 'block mb-1.5 source-code-pro-regular text-xs md:text-sm text-gray-400'
+const labelClass = 'block mb-1.5 cabin-medium text-xs md:text-sm text-gray-400'
 
 export function ContactForm() {
     const [fields, setFields] = useState(initialFields)
@@ -58,8 +58,8 @@ export function ContactForm() {
 
     return (
         <>
-            <h3 className="source-code-pro-regular text-xl text-gray-300 mb-4 mt-12 text-center">
-                Or send me a message and I'll get back to you shortly!
+            <h3 className="cabin-semibold text-lg md:text-xl text-gray-300 mb-12 mt-20 text-center leading-snug px-2">
+                Or send me a message and I&apos;ll get back to you shortly!
             </h3>
             <form
                 onSubmit={handleSubmit}
@@ -151,7 +151,7 @@ export function ContactForm() {
                 {status && (
                     <p
                     role="status"
-                    className={`mb-4 source-code-pro-regular text-sm md:text-base ${
+                    className={`mb-4 cabin-regular text-sm md:text-base ${
                         status.type === 'success' ? 'text-cyan-400' : 'text-red-400'
                     }`}
                     >
@@ -162,7 +162,7 @@ export function ContactForm() {
                 <button
                     type="submit"
                     disabled={submitting}
-                    className="w-full sm:w-auto rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-400 text-zinc-900 source-code-pro-regular text-sm md:text-base px-4 py-1 border border-zinc-200/80 hover:from-zinc-200 hover:to-zinc-300 hover:shadow-lg transition-all duration-300 shadow-md disabled:opacity-60 disabled:pointer-events-none cursor-pointer"
+                    className="w-full sm:w-auto rounded-lg bg-gradient-to-r from-zinc-300 to-zinc-400 text-zinc-900 cabin-semibold text-sm md:text-base px-4 py-2 border border-zinc-200/80 hover:from-zinc-200 hover:to-zinc-300 hover:shadow-lg transition-all duration-300 shadow-md disabled:opacity-60 disabled:pointer-events-none cursor-pointer"
                     >
                     {submitting ? 'Sending…' : 'Send message'}
                 </button>

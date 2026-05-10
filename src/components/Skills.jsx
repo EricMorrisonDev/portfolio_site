@@ -28,7 +28,7 @@ export function Skills () {
 
     return(
         <>
-            <h2 className="nunito-sans-bold text-4xl md:text-5xl my-18 md:my-24 text-cyan-300 text-center">Skills</h2>
+            <h2 className="cabin-bold text-4xl md:text-5xl my-18 md:my-24 text-gray-300 text-center tracking-tight">Skills</h2>
             <motion.div 
             variants={listVariants}
             initial="hidden"
@@ -43,7 +43,7 @@ export function Skills () {
                         className="bg-slate-900/50 p-6 rounded-xl backdrop-blur-sm"
                         >
                             <div className="flex justify-between gap-6 items-center max-h-24 mx-8">
-                                <p className="text-xl md:text-2xl nunito-sans-bold text-center bg-gradient-to-br from-slate-300 via-blue-400 to-purple-400 bg-clip-text text-transparent">
+                                <p className="cabin-semibold text-xl md:text-2xl text-center text-gray-300 bg-clip-text">
                                     {item.title}
                                 </p>
                                 <img src={item.icon} className="h-[50px] w-[50px]"/>
@@ -54,7 +54,7 @@ export function Skills () {
                                         return(
                                             <li 
                                             key={index}
-                                            className="nunito-sans-italic text-gray-300 text-base list-disc my-4">
+                                            className="cabin-regular text-gray-300 text-base list-disc my-4 leading-relaxed">
                                                 {point}
                                             </li>
                                         )
