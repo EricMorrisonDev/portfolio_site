@@ -8,7 +8,7 @@ export function Header(props) {
 
     return(
         <>
-        <div className="grid grid-cols-1 md:grid-cols-3 w-9/10 md:w-4/5 mx-auto bg-gradient-to-br from-black via-zinc-900 to-neutral-800 p-4 pt-8 md:p-12 rounded-lg md:rounded-[2rem] border border-1 border-cyan-300">
+        <div className="grid grid-cols-1 md:grid-cols-3 w-9/10 md:w-4/5 mx-auto bg-gradient-to-br from-black via-zinc-900 to-neutral-800 p-4 pt-8 md:p-12 rounded-lg md:rounded-[2rem] border border-1 border-gray-300">
                 <div className="md:col-span-2">
                     <h1 className="cabin-bold text-5xl lg:text-8xl mb-4 text-gray-300">
                         Eric Morrison
