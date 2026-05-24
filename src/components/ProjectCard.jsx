@@ -6,6 +6,22 @@ import { useEffect, useState } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 
+function projectImageClassName(project, { isSmallDisplay, alternateLayout }) {
+    const outline = project.app ? "border-2 border-accent" : "";
+
+    if (alternateLayout) {
+        return project.app
+            ? `rounded-lg h-[400px] ${outline}`.trim()
+            : "rounded-lg h-[400px] w-full object-contain";
+    }
+
+    if (project.app || isSmallDisplay) {
+        return `rounded-[1.5rem] md:h-[400px] ${outline}`.trim();
+    }
+
+    return "rounded-lg h-[400px] w-full object-contain";
+}
+
 export function ProjectCard(props) {
     // needs title, description, img, tech stack, links
     const { project, index } = props
@@ -53,8 +69,8 @@ export function ProjectCard(props) {
             viewport={{ once: true, amount: isSmallDisplay ? 0.1 : 0.2 }}
             >
                 <div className="md:col-span-1 md:p-8">
-                    <h3 className="cabin-semibold text-3xl text-gray-300">{project.title}</h3>
-                    <p className="cabin-regular text-base md:text-lg my-6 text-gray-300 leading-relaxed">{project.description}</p>
+                    <h3 className="cabin-semibold text-3xl text-primary">{project.title}</h3>
+                    <p className="cabin-regular text-base md:text-lg my-6 text-primary leading-relaxed">{project.description}</p>
                     {project.stack && (<ul className="grid grid-cols-4 md:flex gap-4 md:gap-8 mb-8">
                         {project.stack.map((item, index) => (
                             <li key={index}><img className="h-[50px] w-[50px] rounded-md" 
@@ -62,7 +78,7 @@ export function ProjectCard(props) {
                         ))}
                     </ul>)}
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block max-w-full">
-                        <p className="source-code-pro-regular text-sm md:text-base text-cyan-400 break-all hover:underline">{project.link}</p>
+                        <p className="source-code-pro-regular text-sm md:text-base text-accent break-all hover:text-accent-hover hover:underline">{project.link}</p>
                     </a>
                 </div>
                 <div className="mt-8 md:mt-0 md:col-span-1 md:h-[400px]">
@@ -77,8 +93,10 @@ export function ProjectCard(props) {
                         {(isSmallDisplay? project.mobileImgs ? project.mobileImgs : project.imgs : project.imgs).map((img, index) => (
                             <SwiperSlide key={index}
                             className="mx-auto">
-                                <img src={img} 
-                                className={project.app ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : isSmallDisplay ? "rounded-[1.5rem] md:h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] w-full object-contain border-2"}/>
+                                <img src={img}
+                                alt=""
+                                className={projectImageClassName(project, { isSmallDisplay })}
+                                />
                             </SwiperSlide>
                         ))}
                     </Swiper>
@@ -112,15 +130,17 @@ export function ProjectCard(props) {
                         {project.imgs.map((img, index) => (
                             <SwiperSlide key={index}
                             className="mx-auto">
-                                <img src={img} 
-                                className={project.app ? "rounded-lg h-[400px] border-2 border-cyan-300" : "rounded-lg h-[400px] w-full object-contain border-2"}/>
+                                <img src={img}
+                                alt=""
+                                className={projectImageClassName(project, { alternateLayout: true })}
+                                />
                             </SwiperSlide>
                         ))}
                     </Swiper>
                 </div>
                 <div className="md:col-span-1 p-8">
-                    <h3 className="cabin-semibold text-3xl text-gray-300">{project.title}</h3>
-                    <p className="cabin-regular text-lg my-6 text-gray-300 leading-relaxed">{project.description}</p>
+                    <h3 className="cabin-semibold text-3xl text-primary">{project.title}</h3>
+                    <p className="cabin-regular text-lg my-6 text-primary leading-relaxed">{project.description}</p>
                     {project.stack && (<ul className="flex gap-4 mb-8">
                         {project.stack.map((item, index) => (
                             <li key={index}><img className="h-[50px] w-[50px] rounded-md" 
@@ -128,7 +148,7 @@ export function ProjectCard(props) {
                         ))}
                     </ul>)}
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="inline-block max-w-full">
-                        <p className="source-code-pro-regular text-sm md:text-base text-cyan-400 break-all hover:underline">{project.link}</p>
+                        <p className="source-code-pro-regular text-sm md:text-base text-accent break-all hover:text-accent-hover hover:underline">{project.link}</p>
                     </a>
                 </div>
                 {project.videoLink && (

@@ -28,7 +28,7 @@ export function Skills () {
 
     return(
         <>
-            <h2 className="cabin-bold text-4xl md:text-5xl my-18 md:my-24 text-gray-300 text-center tracking-tight">Skills</h2>
+            <h2 className="section-heading">Skills</h2>
             <motion.div 
             variants={listVariants}
             initial="hidden"
@@ -40,10 +40,10 @@ export function Skills () {
                         <motion.div 
                         key={index}
                         variants={itemVariants}
-                        className="bg-slate-900/50 p-6 rounded-xl backdrop-blur-sm"
+                        className="bg-elevated/80 p-6 rounded-xl border border-border"
                         >
                             <div className="flex justify-between gap-6 items-center max-h-24 mx-8">
-                                <p className="cabin-semibold text-xl md:text-2xl text-center text-gray-300 bg-clip-text">
+                                <p className="cabin-semibold text-xl md:text-2xl text-center text-primary bg-clip-text">
                                     {item.title}
                                 </p>
                                 <img src={item.icon} className="h-[50px] w-[50px]"/>
@@ -54,7 +54,7 @@ export function Skills () {
                                         return(
                                             <li 
                                             key={index}
-                                            className="cabin-regular text-gray-300 text-base list-disc my-4 leading-relaxed">
+                                            className="cabin-regular text-primary text-base list-disc my-4 leading-relaxed">
                                                 {point}
                                             </li>
                                         )

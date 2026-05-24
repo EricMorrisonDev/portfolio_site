@@ -2,8 +2,6 @@ import { Header } from "./components/Header"
 import { Nav } from "./components/Nav"
 import { ProjectList } from "./components/ProjectList"
 import { Skills } from "./components/Skills"
-import { ButtonBar } from "./components/ButtonBar"
-import { Testimonials } from "./components/Testimonials"
 import { ContactInfo } from "./components/ContactInfo"
 import { AboutMe } from "./components/AboutMe"
 import { Footer } from "./components/Footer"
@@ -21,12 +19,7 @@ function App() {
         setNavHeight={setNavHeight}
         />
       <div className="mt-24 md:mt-38">
-        <Header 
-          navHeight={navHeight}
-        />
-        <ButtonBar 
-          navHeight={navHeight}
-        />
+        <Header navHeight={navHeight} />
         <div id="websites">
           <WebsiteList />
         </div>

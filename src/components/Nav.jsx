@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef} from "react";
 import { scrollToSection } from "../lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Nav({ navHeight, setNavHeight }) {
 
@@ -34,18 +35,23 @@ export function Nav({ navHeight, setNavHeight }) {
 
     return(
         <>
-            <nav className={`cabin-regular flex justify-end fixed top-0 left-0 right-0 z-50 transition-all duration-300 p-6 ${
-                scrolled 
-                    ? 'bg-slate-900/95 backdrop-blur-md shadow-lg' 
-                    : 'bg-transparent'
+            <nav
+                className={`cabin-regular flex justify-end items-center fixed top-0 left-0 right-0 z-50 p-6 transition-[background-color,box-shadow,backdrop-filter] duration-300 ease-in-out ${
+                scrolled
+                    ? 'backdrop-blur-md shadow-md'
+                    : 'shadow-none'
                 }`}
+                style={{ backgroundColor: scrolled ? 'var(--theme-nav-scrolled)' : 'transparent' }}
                 ref={navRef}
                 >
-                <ul className="flex flex-wrap justify-end gap-4 sm:gap-6 md:gap-4">
+                <ul className="flex flex-wrap justify-end items-center gap-2 sm:gap-4 md:gap-2">
+                    <li>
+                        <ThemeToggle />
+                    </li>
                     <li>
                         <button 
                             type="button"
-                            className="cabin-semibold md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors text-sm md:text-lg tracking-tight cursor-pointer"
+                            className="nav-link"
                             onClick={() => scrollToSection('about', navHeight)}
                         >
                             About Me
@@ -54,7 +60,7 @@ export function Nav({ navHeight, setNavHeight }) {
                     <li>
                         <button 
                             type="button"
-                            className="cabin-semibold md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors text-sm md:text-lg tracking-tight cursor-pointer"
+                            className="nav-link"
                             onClick={() => scrollToSection('websites', navHeight)}
                         >
                             Websites
@@ -63,7 +69,7 @@ export function Nav({ navHeight, setNavHeight }) {
                     <li>
                         <button 
                             type="button"
-                            className="cabin-semibold md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors text-sm md:text-lg tracking-tight cursor-pointer"
+                            className="nav-link"
                             onClick={() => scrollToSection('apps', navHeight)}
                         >
                             Apps
@@ -72,7 +78,7 @@ export function Nav({ navHeight, setNavHeight }) {
                     <li>
                         <button 
                             type="button"
-                            className="cabin-semibold md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors text-sm md:text-lg tracking-tight cursor-pointer"
+                            className="nav-link"
                             onClick={() => scrollToSection('skills', navHeight)}
                         >
                             Skills
@@ -81,7 +87,7 @@ export function Nav({ navHeight, setNavHeight }) {
                     <li>
                         <button 
                             type="button"
-                            className="cabin-semibold md:mx-2 text-gray-300 hover:text-cyan-400 transition-colors text-sm md:text-lg tracking-tight cursor-pointer"
+                            className="nav-link"
                             onClick={() => scrollToSection('contact', navHeight)}
                         >
                             Contact

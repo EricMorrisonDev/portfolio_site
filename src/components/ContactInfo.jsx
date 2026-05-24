@@ -11,7 +11,7 @@ export function ContactInfo() {
 
     return(
         <>
-            <h2 className="cabin-bold text-4xl md:text-5xl my-24 text-gray-300 text-center tracking-tight">Let's Connect</h2>
+            <h2 className="section-heading my-24">Let&apos;s Connect</h2>
             <div className="flex flex-col md:flex-row justify-center gap-12 md:gap-24 w-4/5 mx-auto">
                 {contactData.map((item, index) => (
                     <div key={index}
@@ -20,13 +20,13 @@ export function ContactInfo() {
                         alt=""
                         className="h-[50px] w-[50px] shrink-0" />
                         <div>
-                            <p className="cabin-semibold text-sm md:text-base text-gray-300">{item.title}</p>
+                            <p className="cabin-semibold text-sm md:text-base text-primary">{item.title}</p>
                             <p className="mt-1">
                                 <a
                                     href={contactHref(item)}
                                     target={item.title === "Email" ? undefined : "_blank"}
                                     rel={item.title === "Email" ? undefined : "noopener noreferrer"}
-                                    className="source-code-pro-regular text-sm md:text-base text-cyan-400 break-all hover:underline"
+                                    className="source-code-pro-regular text-sm md:text-base text-accent break-all hover:text-accent-hover hover:underline"
                                 >
                                     {item.value}
                                 </a>
