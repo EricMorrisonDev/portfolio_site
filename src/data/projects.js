@@ -19,7 +19,7 @@ export const projects = [
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_Boi_mobile_screenshot_5.jpeg`
         ],
         stack: ["tailwind", "node", "react", "typescript", "postgres"],
-        link: "https://github.com/EricMorrisonDev/pawshake",
+        link: "https://policyboi.vercel.app/",
         app: false
         
     },
