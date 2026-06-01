@@ -19,12 +19,12 @@ export const projects = [
             `${BASE_URL}img/Policy_Boi_mobile_screenshots/Policy_Boi_mobile_screenshot_5.jpeg`
         ],
         stack: ["tailwind", "node", "react", "typescript", "postgres"],
-        link: "https://policyboi.vercel.app/",
+        link: "https://github.com/EricMorrisonDev/pawshake",
         app: false
         
     },
     {
-        title: "Evernote Replacement",
+        title: "Nevernote",
         description: "After being an Evernote user for years I was dismayed to see that they had dramatically increased their prices. I set out to build my own Evernote and save myself a lot of money. This project hugely improved my full stack capabilities, allowing me to better understand API contracts, Typescript conventions, and Next.js principles.",
         imgs: [
             `${BASE_URL}img/Notes_app_screenshots/Note_screenshot_1.png`, 
